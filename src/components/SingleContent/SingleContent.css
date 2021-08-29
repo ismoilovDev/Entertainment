@@ -1,0 +1,42 @@
+.media {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #282c34;
+    border-radius: 10px;
+    position: relative;
+    font-family: sans-serif;
+    transition: .3s all ease-out;
+    cursor: pointer;
+}
+
+.media:hover {
+    background-color: rgba(255, 255, 255, 0.836);
+    color: #101010;
+}
+@media (max-width: 550px) {
+    .media {
+        width: 46%;
+    }
+}
+.poster {
+    border-radius: 10px;
+    object-fit: cover;
+}
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 8px 0;
+}
+.subTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 2px;
+    margin-bottom: 5px;
+    font-weight: 300;
+    height: 100%;
+}
