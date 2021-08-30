@@ -51,14 +51,12 @@ export default function ModalContent({children, media_type, id}) {
         const {data} = await axios.get(`https://api.themoviedb.org/3/${media_type}/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`);
 
         setContent(data);
-        console.log(data.poster_path);
     }
 
     const fetchVideo = async () => {
         const {data} = await axios.get(`https://api.themoviedb.org/3/${media_type}/${id}/videos?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`);
 
         setVideo(data.results[0]?.key);
-        console.log(data);
     }
 
 
